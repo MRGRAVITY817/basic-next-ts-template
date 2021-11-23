@@ -1,11 +1,5 @@
 import { useEffect, useState } from "react";
 
-const HeaderItem = ({ item }: { item: string }) => (
-  <h1 className="hover:text-strong text-xl transition-colors cursor-pointer">
-    {item}
-  </h1>
-);
-
 export const Header = () => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   useEffect(() => {
