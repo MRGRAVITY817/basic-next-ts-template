@@ -16,10 +16,6 @@ class AppDocument extends Document {
       <Html lang="ko" className="overflow-x-hidden">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=optional"
-            rel="stylesheet"
-          />
-          <link
             href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700&display=optional"
             rel="stylesheet"
           ></link>

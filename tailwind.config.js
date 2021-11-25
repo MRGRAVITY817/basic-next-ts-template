@@ -3,21 +3,18 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   mode: "jit",
   purge: ["./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media",
   theme: {
     extend: {
       fontFamily: {
         sans: ["Zen Kaku Gothic Antique", ...defaultTheme.fontFamily.sans],
-        fancy: ["Dancing Script"],
       },
     },
     screens: {
       mobile: "375px",
       tablet: "768px",
       laptop: "1024px",
-      laptopL: "1440px",
-      desktop: "1920px",
-      fourK: "2560px",
+      desktop: "1440px",
     },
     colors: {
       main: "#08434E",
