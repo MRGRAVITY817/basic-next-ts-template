@@ -2,25 +2,17 @@
   "name": "ecommerce",
   "private": true,
   "scripts": {
-    "dev": "npm run tailwind:build & next dev -p 3333",
+    "dev": "next dev -p 3333",
     "build": "next build",
-    "prebuild": "npm run tailwind:prodbuild",
     "start": "next start",
-    "lint": "next lint",
-    "tailwind:build": "tailwind build -i ./src/styles/tailwind.css -o ./src/styles/globals.css",
-    "tailwind:prodbuild": "NODE_ENV=production npm run tailwind:build"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-regular-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.16",
     "@headlessui/react": "^1.4.2",
+    "@tailwindcss/typography": "^0.4.1",
     "next": "12.0.4",
     "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "swiper": "^7.3.0"
+    "react-dom": "17.0.2"
   },
   "devDependencies": {
     "@types/node": "16.11.9",
@@ -32,5 +24,11 @@
     "prettier-plugin-tailwind-css": "^1.5.0",
     "tailwindcss": "^2.2.19",
     "typescript": "4.5.2"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none"
   }
 }

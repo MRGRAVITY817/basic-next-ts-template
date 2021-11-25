@@ -13,12 +13,16 @@ class AppDocument extends Document {
   };
   render() {
     return (
-      <Html lang="ko" className="overflow-x-hidden">
+      <Html lang="ko">
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@400;500;700&display=optional"
-            rel="stylesheet"
-          ></link>
+            rel="preload"
+            href="/fonts/Outfit-VariableFont_wght.ttf"
+            as="font"
+            type="font/ttf"
+            crossOrigin="anonymous"
+          />
+          <link href="/static/favicon.ico" rel="shortcut icon" />
         </Head>
         <body>
           <Main />
