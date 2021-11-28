@@ -3,8 +3,8 @@ import Document, {
   Head,
   Html,
   Main,
-  NextScript,
-} from "next/document";
+  NextScript
+} from 'next/document';
 
 class AppDocument extends Document {
   static getInitialProps = async (context: DocumentContext) => {
@@ -15,16 +15,10 @@ class AppDocument extends Document {
     return (
       <Html lang="ko">
         <Head>
-          <link
-            rel="preload"
-            href="/fonts/Outfit-VariableFont_wght.ttf"
-            as="font"
-            type="font/ttf"
-            crossOrigin="anonymous"
-          />
+          <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
           <link href="/static/favicon.ico" rel="shortcut icon" />
         </Head>
-        <body>
+        <body className="bg-bright text-dark dark:bg-dark dark:text-bright">
           <Main />
           <NextScript />
         </body>
