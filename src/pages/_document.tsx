@@ -18,7 +18,7 @@ class AppDocument extends Document {
           <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
           <link href="/static/favicon.ico" rel="shortcut icon" />
         </Head>
-        <body className="bg-bright text-dark dark:bg-dark dark:text-bright">
+        <body className="dark:bg-gray-800 dark:text-white text-gray-800 bg-white">
           <Main />
           <NextScript />
         </body>

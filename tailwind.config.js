@@ -9,18 +9,6 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...fontFamily.sans]
       }
-    },
-    screens: {
-      mobile: '375px',
-      tablet: '768px',
-      laptop: '1024px',
-      desktop: '1440px'
-    },
-    colors: {
-      main: '#08434E',
-      bright: '#f8f9fa',
-      dark: '#05282F',
-      strong: '#FF4821'
     }
   },
   variants: {
